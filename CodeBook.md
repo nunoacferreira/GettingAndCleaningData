@@ -12,9 +12,9 @@ Finally, we generate a new dataset with all the average measures for each subjec
 
 
 <b>Variables</b>
-<li><u>xTrain</u>, <u>yTrain</u>, <u>xTest</u>, <u>yTest</u>, <u>subjectTrain</u> and <u>subjectTest</u> contain the data from the downloaded files.
-<li><u>xData</u>, <u>yData</u> and <u>subjectData</u> merge the previous datasets to further analysis.
-<li><u>features</u> contains the correct names for the x_data dataset, which are applied to the column names stored in mean_and_std_features, a numeric vector used to extract the desired data.
-A similar approach is taken with activity names through the activities variable.
-all_data merges x_data, y_data and subject_data in a big dataset.
-Finally, averages_data contains the relevant averages which will be later stored in a .txt file. ddply() from the plyr package is used to apply colMeans() and ease the development.
+<li>xTrain, yTrain, xTest, yTest, subjectTrain and subjectTest contain the data from the downloaded files.
+<li>xData, yData and subjectData merge the previous datasets to further analysis.
+<li>features contains the correct names for the xData dataset, which are applied to the column names stored in meanANDstd, a numeric vector used to extract the desired data.
+<li>A similar approach is taken with activity names through the activities variable.
+<li>allData merges xData, yData and subjectData in a big dataset.
+<li>averagesData contains the relevant averages which will be later stored in a .txt file. ddply() from the plyr package is used to apply colMeans() and ease the development.
